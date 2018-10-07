@@ -6,6 +6,11 @@ module FormsLab
     get "/" do
       erb :root
     end
+
+    POST "/pirates" do
+      @pirate = Pirates.new(params[:pirate])
+    end
+
     # code other routes/actions here
 
   end
