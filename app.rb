@@ -7,7 +7,7 @@ module FormsLab
       erb :'pirates/new'
     end
 
-    POST "/pirates" do
+    post "/pirates" do
       @pirate = Pirates.new(params[:pirate])
     end
 
